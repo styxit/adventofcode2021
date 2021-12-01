@@ -3,7 +3,6 @@
 namespace Styxit\Commands;
 
 use InvalidArgumentException;
-use Styxit\AbstractSolution;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -28,7 +27,7 @@ class SolvePuzzleCommand extends Command
     /**
      * Run the command.
      *
-     * @param InputInterface   $input
+     * @param InputInterface  $input
      * @param OutputInterface $output
      *
      * @return int
@@ -46,7 +45,7 @@ class SolvePuzzleCommand extends Command
 
         $output->writeln('Solution to part 1: '.$solution->part1);
         $output->writeln('Solution to part 2: '.$solution->part2);
-        
+
         return 0;
     }
 
@@ -57,7 +56,7 @@ class SolvePuzzleCommand extends Command
      *
      * @return string The FQNS to the solution.
      */
-    private function getDaySolution($day) : string
+    private function getDaySolution($day): string
     {
         if (!is_numeric($day)) {
             throw new \InvalidArgumentException('No numeric day provided');

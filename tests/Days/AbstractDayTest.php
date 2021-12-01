@@ -5,7 +5,7 @@ namespace Tests\Days;
 use PHPUnit\Framework\TestCase;
 
 abstract class AbstractDayTest extends TestCase
-{   
+{
     /**
      * Classname of the solution to test.
      * Should be overwritten by the test class.
@@ -22,14 +22,14 @@ abstract class AbstractDayTest extends TestCase
      */
     public static function setUpBeforeClass(): void
     {
-        /**
+        /*
          * create an instance of the solution.
          * Use late satic binding to load the string as defined in the test: https://www.php.net/lsb
          */
         self::$solution = new static::$class();
 
-         // Execute day solution.
-         self::$solution->execute();
+        // Execute day solution.
+        self::$solution->execute();
     }
 
     /**
