@@ -1,0 +1,29 @@
+{
+    "name": "styxit/adventofcode2021",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Styxit",
+            "email": "info@styxit.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "symfony/console": "^5.2"
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "Styxit\\": "./src",
+            "Days\\": "./days"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { 
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
