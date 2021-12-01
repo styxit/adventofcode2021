@@ -1,5 +1,8 @@
 # PHPunit
 .phpunit.result*
 
+# PHP CS fixer
+.php-cs-fixer.cache
+
 # Vendor packages.
 vendor/
